@@ -1,0 +1,213 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 608 400)
+	(text "Char_Buf_Subsystem" (rect 239 -1 331 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 384 20 396)(font "Arial" ))
+	(port
+		(pt 608 72)
+		(input)
+		(text "avalon_char_source_ready" (rect 0 0 112 12)(font "Arial" (font_size 8)))
+		(text "avalon_char_source_ready" (rect 469 61 613 72)(font "Arial" (font_size 8)))
+		(line (pt 608 72)(pt 368 72)(line_width 1))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "char_buffer_control_slave_address[1..0]" (rect 0 0 164 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_control_slave_address[1..0]" (rect 4 61 238 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 240 72)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "char_buffer_control_slave_byteenable[3..0]" (rect 0 0 175 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_control_slave_byteenable[3..0]" (rect 4 77 256 88)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 240 88)(line_width 3))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "char_buffer_control_slave_read" (rect 0 0 130 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_control_slave_read" (rect 4 93 184 104)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 240 104)(line_width 1))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "char_buffer_control_slave_write" (rect 0 0 130 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_control_slave_write" (rect 4 109 190 120)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 240 120)(line_width 1))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "char_buffer_control_slave_writedata[31..0]" (rect 0 0 171 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_control_slave_writedata[31..0]" (rect 4 125 256 136)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 240 136)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "char_buffer_slave_address[10..0]" (rect 0 0 136 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_slave_address[10..0]" (rect 4 181 196 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 240 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "char_buffer_slave_clken" (rect 0 0 101 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_slave_clken" (rect 4 197 142 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 240 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "char_buffer_slave_chipselect" (rect 0 0 119 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_slave_chipselect" (rect 4 213 172 224)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 240 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "char_buffer_slave_write" (rect 0 0 99 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_slave_write" (rect 4 229 142 240)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 240 240)(line_width 1))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "char_buffer_slave_writedata[31..0]" (rect 0 0 139 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_slave_writedata[31..0]" (rect 4 261 208 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 240 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "char_buffer_slave_byteenable[3..0]" (rect 0 0 143 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_slave_byteenable[3..0]" (rect 4 277 208 288)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 240 288)(line_width 3))
+	)
+	(port
+		(pt 0 328)
+		(input)
+		(text "sys_clk_clk" (rect 0 0 48 12)(font "Arial" (font_size 8)))
+		(text "sys_clk_clk" (rect 4 317 70 328)(font "Arial" (font_size 8)))
+		(line (pt 0 328)(pt 240 328)(line_width 1))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "sys_reset_reset_n" (rect 0 0 77 12)(font "Arial" (font_size 8)))
+		(text "sys_reset_reset_n" (rect 4 357 106 368)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 240 368)(line_width 1))
+	)
+	(port
+		(pt 608 88)
+		(output)
+		(text "avalon_char_source_startofpacket" (rect 0 0 140 12)(font "Arial" (font_size 8)))
+		(text "avalon_char_source_startofpacket" (rect 432 77 624 88)(font "Arial" (font_size 8)))
+		(line (pt 608 88)(pt 368 88)(line_width 1))
+	)
+	(port
+		(pt 608 104)
+		(output)
+		(text "avalon_char_source_endofpacket" (rect 0 0 136 12)(font "Arial" (font_size 8)))
+		(text "avalon_char_source_endofpacket" (rect 436 93 616 104)(font "Arial" (font_size 8)))
+		(line (pt 608 104)(pt 368 104)(line_width 1))
+	)
+	(port
+		(pt 608 120)
+		(output)
+		(text "avalon_char_source_valid" (rect 0 0 106 12)(font "Arial" (font_size 8)))
+		(text "avalon_char_source_valid" (rect 475 109 619 120)(font "Arial" (font_size 8)))
+		(line (pt 608 120)(pt 368 120)(line_width 1))
+	)
+	(port
+		(pt 608 136)
+		(output)
+		(text "avalon_char_source_data[39..0]" (rect 0 0 129 12)(font "Arial" (font_size 8)))
+		(text "avalon_char_source_data[39..0]" (rect 446 125 626 136)(font "Arial" (font_size 8)))
+		(line (pt 608 136)(pt 368 136)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(output)
+		(text "char_buffer_control_slave_readdata[31..0]" (rect 0 0 171 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_control_slave_readdata[31..0]" (rect 4 141 250 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 240 152)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(output)
+		(text "char_buffer_slave_readdata[31..0]" (rect 0 0 139 12)(font "Arial" (font_size 8)))
+		(text "char_buffer_slave_readdata[31..0]" (rect 4 245 202 256)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 240 256)(line_width 3))
+	)
+	(drawing
+		(text "avalon_char_source" (rect 369 43 846 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "ready" (rect 340 67 710 144)(font "Arial" (color 0 0 0)))
+		(text "startofpacket" (rect 308 83 694 176)(font "Arial" (color 0 0 0)))
+		(text "endofpacket" (rect 313 99 692 208)(font "Arial" (color 0 0 0)))
+		(text "valid" (rect 345 115 720 240)(font "Arial" (color 0 0 0)))
+		(text "data" (rect 347 131 718 272)(font "Arial" (color 0 0 0)))
+		(text "char_buffer_control_slave" (rect 87 43 324 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 245 67 532 144)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 245 83 550 176)(font "Arial" (color 0 0 0)))
+		(text "read" (rect 245 99 514 208)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 245 115 520 240)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 245 131 544 272)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 245 147 538 304)(font "Arial" (color 0 0 0)))
+		(text "char_buffer_slave" (rect 134 163 370 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 245 187 532 384)(font "Arial" (color 0 0 0)))
+		(text "clken" (rect 245 203 520 416)(font "Arial" (color 0 0 0)))
+		(text "chipselect" (rect 245 219 550 448)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 245 235 520 480)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 245 251 538 512)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 245 267 544 544)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 245 283 550 576)(font "Arial" (color 0 0 0)))
+		(text "sys_clk" (rect 197 299 436 611)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 245 323 508 656)(font "Arial" (color 0 0 0)))
+		(text "sys_reset" (rect 183 339 420 691)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 245 363 532 736)(font "Arial" (color 0 0 0)))
+		(text " system " (rect 573 384 1194 778)(font "Arial" ))
+		(line (pt 240 32)(pt 368 32)(line_width 1))
+		(line (pt 368 32)(pt 368 384)(line_width 1))
+		(line (pt 240 384)(pt 368 384)(line_width 1))
+		(line (pt 240 32)(pt 240 384)(line_width 1))
+		(line (pt 367 52)(pt 367 140)(line_width 1))
+		(line (pt 366 52)(pt 366 140)(line_width 1))
+		(line (pt 241 52)(pt 241 156)(line_width 1))
+		(line (pt 242 52)(pt 242 156)(line_width 1))
+		(line (pt 241 172)(pt 241 292)(line_width 1))
+		(line (pt 242 172)(pt 242 292)(line_width 1))
+		(line (pt 241 308)(pt 241 332)(line_width 1))
+		(line (pt 242 308)(pt 242 332)(line_width 1))
+		(line (pt 241 348)(pt 241 372)(line_width 1))
+		(line (pt 242 348)(pt 242 372)(line_width 1))
+		(line (pt 0 0)(pt 608 0)(line_width 1))
+		(line (pt 608 0)(pt 608 400)(line_width 1))
+		(line (pt 0 400)(pt 608 400)(line_width 1))
+		(line (pt 0 0)(pt 0 400)(line_width 1))
+	)
+)

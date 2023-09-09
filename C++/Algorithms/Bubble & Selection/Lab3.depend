@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1676004463 source:c:\users\rrain\onedrive\documents\codeblocksprojects\lab3\lab3code.cpp
+	<iostream>
+	<fstream>
+	<chrono>
+	<vector>
+	<string>
+

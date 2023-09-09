@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1677217030 source:c:\users\rrain\onedrive\documents\codeblocksprojects\lab5\lab5.cpp
+	<iostream>
+	<chrono>
+	<ctime>
+

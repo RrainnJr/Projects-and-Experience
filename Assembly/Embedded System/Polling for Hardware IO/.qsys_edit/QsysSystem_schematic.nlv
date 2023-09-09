@@ -1,0 +1,34 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst QsysSystem.timer_0 -pg 1 -lvl 3 -y 640
+preplace inst QsysSystem.SevSeg4MSB -pg 1 -lvl 2 -y 540
+preplace inst QsysSystem.CLK.reset_from_locked -pg 1
+preplace inst QsysSystem.SDRAM -pg 1 -lvl 3 -y 880
+preplace inst QsysSystem.Processor -pg 1 -lvl 1 -y 40
+preplace inst QsysSystem.KEYS -pg 1 -lvl 3 -y 740
+preplace inst QsysSystem.JTAG_UART -pg 1 -lvl 2 -y 30
+preplace inst QsysSystem.CLK -pg 1 -lvl 2 -y 990
+preplace inst QsysSystem.On_Chip_Mem -pg 1 -lvl 2 -y 280
+preplace inst QsysSystem -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst QsysSystem.SevSegment_4LSB -pg 1 -lvl 2 -y 660
+preplace inst QsysSystem.SYSID -pg 1 -lvl 2 -y 360
+preplace inst QsysSystem.CLK.sys_pll -pg 1
+preplace inst QsysSystem.Switches -pg 1 -lvl 2 -y 800
+preplace inst QsysSystem.RED_LEDs -pg 1 -lvl 2 -y 440
+preplace inst QsysSystem.GREEN_LEDs -pg 1 -lvl 2 -y 180
+preplace netloc FAN_OUT<net_container>QsysSystem</net_container>(SLAVE)KEYS.irq,(MASTER)Processor.d_irq,(SLAVE)JTAG_UART.irq,(SLAVE)timer_0.irq) 1 1 2 500 650 840
+preplace netloc EXPORT<net_container>QsysSystem</net_container>(SLAVE)CLK.ref_clk,(SLAVE)QsysSystem.clk) 1 0 2 NJ 1000 NJ
+preplace netloc INTERCONNECT<net_container>QsysSystem</net_container>(SLAVE)KEYS.reset,(SLAVE)SDRAM.reset,(MASTER)Processor.jtag_debug_module_reset,(SLAVE)SevSeg4MSB.reset,(SLAVE)RED_LEDs.reset,(SLAVE)JTAG_UART.reset,(SLAVE)GREEN_LEDs.reset,(SLAVE)Processor.reset_n,(SLAVE)On_Chip_Mem.reset1,(SLAVE)Switches.reset,(SLAVE)SevSegment_4LSB.reset,(MASTER)CLK.reset_source,(SLAVE)SYSID.reset,(SLAVE)timer_0.reset) 1 0 3 250 190 560 790 820
+preplace netloc EXPORT<net_container>QsysSystem</net_container>(SLAVE)SDRAM.wire,(SLAVE)QsysSystem.sdram_wire) 1 0 3 NJ 950 NJ 950 NJ
+preplace netloc EXPORT<net_container>QsysSystem</net_container>(SLAVE)QsysSystem.green_leds_external_connection,(SLAVE)GREEN_LEDs.external_connection) 1 0 2 NJ 210 NJ
+preplace netloc EXPORT<net_container>QsysSystem</net_container>(SLAVE)SevSegment_4LSB.external_connection,(SLAVE)QsysSystem.sevsegment_4lsb_external_connection) 1 0 2 NJ 690 NJ
+preplace netloc EXPORT<net_container>QsysSystem</net_container>(SLAVE)RED_LEDs.external_connection,(SLAVE)QsysSystem.red_leds_external_connection) 1 0 2 NJ 470 NJ
+preplace netloc EXPORT<net_container>QsysSystem</net_container>(SLAVE)Switches.external_connection,(SLAVE)QsysSystem.switches_external_connection) 1 0 2 NJ 830 NJ
+preplace netloc FAN_OUT<net_container>QsysSystem</net_container>(MASTER)CLK.sys_clk,(SLAVE)Switches.clk,(SLAVE)GREEN_LEDs.clk,(SLAVE)On_Chip_Mem.clk1,(SLAVE)SDRAM.clk,(SLAVE)SYSID.clk,(SLAVE)JTAG_UART.clk,(SLAVE)SevSegment_4LSB.clk,(SLAVE)RED_LEDs.clk,(SLAVE)SevSeg4MSB.clk,(SLAVE)timer_0.clk,(SLAVE)Processor.clk,(SLAVE)KEYS.clk) 1 0 3 230 30 520 770 860
+preplace netloc INTERCONNECT<net_container>QsysSystem</net_container>(SLAVE)SevSeg4MSB.s1,(SLAVE)RED_LEDs.s1,(SLAVE)Switches.s1,(SLAVE)JTAG_UART.avalon_jtag_slave,(MASTER)Processor.instruction_master,(SLAVE)timer_0.s1,(SLAVE)SYSID.control_slave,(SLAVE)SevSegment_4LSB.s1,(SLAVE)KEYS.s1,(SLAVE)Processor.jtag_debug_module,(SLAVE)On_Chip_Mem.s1,(SLAVE)SDRAM.s1,(SLAVE)GREEN_LEDs.s1,(MASTER)Processor.data_master) 1 0 3 230 170 540 910 800
+preplace netloc EXPORT<net_container>QsysSystem</net_container>(SLAVE)QsysSystem.sevseg4msb_external_connection,(SLAVE)SevSeg4MSB.external_connection) 1 0 2 NJ 570 NJ
+preplace netloc EXPORT<net_container>QsysSystem</net_container>(MASTER)QsysSystem.sdram_clk,(MASTER)CLK.sdram_clk) 1 2 2 NJ 1020 NJ
+preplace netloc EXPORT<net_container>QsysSystem</net_container>(SLAVE)CLK.ref_reset,(SLAVE)QsysSystem.reset) 1 0 2 NJ 1020 NJ
+preplace netloc EXPORT<net_container>QsysSystem</net_container>(SLAVE)KEYS.external_connection,(SLAVE)QsysSystem.keys_external_connection) 1 0 3 NJ 930 NJ 930 NJ
+levelinfo -pg 1 0 200 1170
+levelinfo -hier QsysSystem 210 280 640 930 1080

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1679682493 source:c:\users\rrain\onedrive\documents\codeblocksprojects\lab9\lab9.cpp
+	<iostream>
+	<cmath>
+	<chrono>
+
